@@ -1,0 +1,19 @@
+{
+  "name": "transval-intranet-new",
+  "version": "1.0.0",
+  "description": "Transval Intranet - Internal web portal for Transval company",
+  "main": "src/scripts/main.js",  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . -p 8080 -c-1"
+  },
+  "keywords": [
+    "transval",
+    "intranet",
+    "portal"
+  ],
+  "author": "Transval",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
