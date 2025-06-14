@@ -1,0 +1,135 @@
+/* --------------------------------------------------
+   _hero-title-banner.css – Hero banner e links rápidos
+   -------------------------------------------------- */
+
+/* ===================
+   Hero Section
+   =================== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: 800px;
+}
+
+/* Contêiner da imagem de fundo */
+.hero picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.85;
+}
+
+/* ===================
+   Camadas de Sobreposição
+   =================== */
+/* Banner decorativo */
+.hero-banner-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+/* Camada de conteúdo */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+/* ===================
+   Links Rápidos
+   =================== */
+.quick-links {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.quick-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  min-width: 150px;
+}
+
+/* ===================
+   Responsividade
+   =================== */
+/* Tablets e dispositivos médios */
+@media (max-width: 768px) {
+  .hero {
+    aspect-ratio: 4/3;
+  }
+
+  .hero picture img {
+    opacity: 0.8;
+  }
+
+  .hero-banner-overlay {
+    background-size: auto 100%;
+    opacity: 0.9;
+  }
+}
+
+/* Dispositivos móveis pequenos */
+@media (max-width: 480px) {
+  .hero {
+    aspect-ratio: 1/1;
+  }
+
+  .hero picture img {
+    opacity: 0.75;
+  }
+
+  .hero-banner-overlay {
+    opacity: 0.85;
+  }
+}
+
+.quick-link {
+  color: var(--clr-primary-500);
+  text-decoration: none;
+  font-weight: 700;  /* Alterado para 700 (negrito) */
+  transition: color 0.3s ease;
+  padding: 0.3rem 1rem;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+}
+
+.quick-link:hover {
+  color: var(--clr-primary-600);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .quick-links {
+    display: none;
+  }
+}

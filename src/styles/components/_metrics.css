@@ -1,16 +1,16 @@
 /* --------------------------------------------------
-   _segments.css – Estilos para a seção de segmentos
+   _metrics.css – Estilos para a seção de métricas
    -------------------------------------------------- */
 
 /* ===================
    Container Principal
    =================== */
-.segments-section {
+.metrics-section {
     background-color: var(--clr-primary-900);
     padding: 4rem 0;
 }
 
-.segments-section .section-title {
+.metrics-section .section-title {
     color: var(--clr-primary-500);
     text-align: center;
     margin-bottom: 3rem;
@@ -18,38 +18,55 @@
 }
 
 /* ===================
-   Grid de Segmentos
+   Grid de Métricas
    =================== */
-.segments-list {
+.metrics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    list-style: none;
+    padding: 0 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
-/* Item do segmento */
-.segments-list li {
+/* ===================
+   Item de Métrica
+   =================== */
+.metric-item {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 2rem;
-    border-radius: var(--radius-lg);
-    background-color: var(--clr-primary-900);
 }
 
-/* Ícone do segmento */
-.segments-list li i {
+/* Ícone */
+.metric-item i {
     font-size: 3rem;
     color: var(--clr-primary-500);
 }
 
-/* Texto do segmento */
-.segments-list li span {
-    font-size: 1.1rem;  /* Aumentado para combinar com o tamanho dos serviços */
+/* Container do texto */
+.metric-text {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-wrap: nowrap;
+}
+
+/* Valor numérico */
+.metric-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* Rótulo */
+.metric-label {
+    font-size: 1.1rem;
     color: white;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 /* ===================
@@ -57,7 +74,7 @@
    =================== */
 /* Desktops menores e tablets grandes */
 @media (max-width: 1024px) {
-    .segments-list {
+    .metrics-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
@@ -65,49 +82,41 @@
 
 /* Tablets e dispositivos médios */
 @media (max-width: 768px) {
-    .segments-section {
+    .metrics-section {
         padding: 3rem 0;
     }
 
-    .segments-section .section-title {
+    .metrics-section .section-title {
         font-size: 1.75rem;
         margin-bottom: 2rem;
     }
 
-    .segments-list {
+    .metrics-grid {
         gap: 2rem;
         padding: 0 0.5rem;
     }
 
-    .segments-list li {
-        padding: 1.5rem;
-    }
-
-    .segments-list li i {
+    .metric-item i {
         font-size: 2.5rem;
     }
 
-    .segments-list li span {
+    .metric-value {
+        font-size: 1.5rem;
+    }
+
+    .metric-label {
         font-size: 1rem;
     }
 }
 
 /* Dispositivos móveis pequenos */
 @media (max-width: 480px) {
-    .segments-section {
+    .metrics-section {
         padding: 2rem 0;
     }
 
-    .segments-list {
+    .metrics-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-    }
-
-    .segments-list li {
-        padding: 1rem;
-    }
-
-    .segments-list li i {
-        font-size: 2rem;
     }
 }

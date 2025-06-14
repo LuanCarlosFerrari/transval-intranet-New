@@ -81,7 +81,7 @@
 
     <!-- Serviços Section -->
     <section id="servicos" class="services" aria-labelledby="services-heading">
-      <div class="section-padding">
+      <div class="section-padding"> <!-- Adicionado wrapper -->
         <h2 id="services-heading" class="section-title">Nossos Serviços</h2>
         <div class="services-grid services-grid-3"> <!-- Serviço: Carretas -->
           <article class="service-card">
@@ -112,29 +112,30 @@
       </div>
     </section> <!-- Segmentos Section -->
     <section id="segmentos" class="segments-section" aria-labelledby="segments-heading">
-      <h2 id="segments-heading" class="section-title">Segmentos Atendidos</h2>
-      <ul class="segments-list">
-        <li>
-          <i class="fas fa-tractor" aria-hidden="true"></i>
-          <span>Agronegócio</span>
-        </li>
-        <li>
-          <i class="fas fa-flask" aria-hidden="true"></i>
-          <span>Químico</span>
-        </li>
-        <li>
-          <i class="fas fa-utensils" aria-hidden="true"></i>
-          <span>Alimentício</span>
-        </li>
-        <li>
-          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-          <span>Varejo & E‑commerce</span>
-        </li>
-      </ul>
-      </div>
+      <div class="section-padding"> <!-- Adicionado wrapper para padronização -->
+        <h2 id="segments-heading" class="section-title">Segmentos Atendidos</h2>
+        <ul class="segments-list">
+          <li>
+            <i class="fas fa-tractor" aria-hidden="true"></i>
+            <span>Agronegócio</span>
+          </li>
+          <li>
+            <i class="fas fa-flask" aria-hidden="true"></i>
+            <span>Químico</span>
+          </li>
+          <li>
+            <i class="fas fa-utensils" aria-hidden="true"></i>
+            <span>Alimentício</span>
+          </li>
+          <li>
+            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            <span>Varejo & E‑commerce</span>
+          </li>
+        </ul>
+      </div> <!-- Fechamento do section-padding -->
     </section> <!-- Cobertura Nacional Section -->
     <section id="cobertura" class="coverage" aria-labelledby="coverage-heading">
-      <div class="section-padding">
+      <div class="section-padding"> <!-- Wrapper já existia, garantindo consistência -->
         <h2 id="coverage-heading" class="section-title">Cobertura Nacional</h2>
         <p class="section-description">
           Presença em 12 estados e mais de 200 rotas ativas, conectando os principais polos industriais do país.
@@ -146,53 +147,52 @@
         </div>
       </div>
     </section><!-- Métricas e Certificações Section -->
-    <section id="metricas" class="metrics" aria-labelledby="metrics-heading">
-      <div class="section-padding">
-        <section class="metrics-section">
-          <h2 id="metrics-heading" class="section-title">Indicadores e Certificações</h2>
-          <div class="metrics-grid">
-            <!-- Métrica: Frota -->
-            <div class="metric-item">
-              <i class="fas fa-truck" aria-hidden="true"></i>
-              <div class="metric-text">
-                <span class="metric-value">+200</span>
-                <span class="metric-label">Caminhões dedicados</span>
-              </div>
-            </div>
-
-            <!-- Métrica: Veículos Agregados -->
-            <div class="metric-item">
-              <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-              <div class="metric-text">
-                <span class="metric-value">+10.000</span>
-                <span class="metric-label">Veículos agregados</span>
-              </div>
-            </div>
-
-            <!-- Métrica: Cobertura -->
-            <div class="metric-item">
-              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-              <div class="metric-text">
-                <span class="metric-value">12</span>
-                <span class="metric-label">Estados atendidos</span>
-              </div>
-            </div>
-
-            <!-- Métrica: Equipe -->
-            <div class="metric-item">
-              <i class="fas fa-users" aria-hidden="true"></i>
-              <div class="metric-text">
-                <span class="metric-value">+600</span>
-                <span class="metric-label">Colaboradores</span>
-              </div>
+    <section id="metricas" class="metrics metrics-section" aria-labelledby="metrics-heading">
+      <div class="section-padding"> <!-- Wrapper já existia, garantindo consistência -->
+        <h2 id="metrics-heading" class="section-title">Indicadores e Certificações</h2>
+        <div class="metrics-grid">
+          <!-- Métrica: Frota -->
+          <div class="metric-item">
+            <i class="fas fa-truck" aria-hidden="true"></i>
+            <div class="metric-text">
+              <span class="metric-value">+200</span>
+              <span class="metric-label">Caminhões dedicados</span>
             </div>
           </div>
+
+          <!-- Métrica: Veículos Agregados -->
+          <div class="metric-item">
+            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            <div class="metric-text">
+              <span class="metric-value">+10.000</span>
+              <span class="metric-label">Veículos agregados</span>
+            </div>
+          </div>
+
+          <!-- Métrica: Cobertura -->
+          <div class="metric-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <div class="metric-text">
+              <span class="metric-value">12</span>
+              <span class="metric-label">Estados atendidos</span>
+            </div>
+          </div>
+
+          <!-- Métrica: Equipe -->
+          <div class="metric-item">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            <div class="metric-text">
+              <span class="metric-value">+600</span>
+              <span class="metric-label">Colaboradores</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Sobre Section -->
     <section id="sobre" class="about" aria-labelledby="about-heading">
-      <div class="section-padding">
+      <div class="section-padding"> <!-- Adicionado wrapper -->
         <h2 id="about-heading" class="section-title">Sobre a Transval</h2>
         <div id="about-presentation" class="about-content" aria-live="polite">
           <!-- Conteúdo será carregado dinamicamente via presentation.js -->
@@ -200,12 +200,9 @@
       </div>
     </section>
 
-    <!-- Timeline Section (conteúdo em desenvolvimento) -->
-    <section id="timeline" class="timeline" aria-label="Linha do tempo - Nossa História"></section>
-
     <!-- Clientes Section -->
     <section id="clientes" class="clients" aria-labelledby="clients-heading">
-      <div class="section-padding">
+      <div class="section-padding"> <!-- Adicionado wrapper -->
         <h2 id="clients-heading" class="section-title">Nossos Clientes</h2>
         <div class="clients-grid" aria-label="Grade de logos dos clientes" role="list">
           <!-- Client cards will be dynamically generated from clients.js -->
@@ -215,7 +212,7 @@
 
     <!-- Contato CTA Section -->
     <section id="contato" class="contact-cta" aria-labelledby="contact-heading">
-      <div class="section-padding text-center">
+      <div class="section-padding text-center"> <!-- Adicionado wrapper, mantendo text-center se necessário -->
         <h2 id="contact-heading" class="section-title">Vamos acelerar sua logística?</h2>
         <p class="cta-description">
           Converse com nossos especialistas e descubra a solução ideal para o seu negócio.

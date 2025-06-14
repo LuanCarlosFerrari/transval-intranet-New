@@ -20,11 +20,15 @@
 /* Componentes estruturais */
 @import url("layout/_header.css");
 @import url("layout/_footer.css");
+/* @import url("./layout/_navigation.css"); */
+/* @import url("./layout/_grid.css"); */
 
 /* ===================
    Utilitários
    =================== */
 @import url("utils/_layout.css");
+/* @import url("./utils/_typography-utils.css"); */
+/* @import url("./utils/_spacing-utils.css"); */
 
 /* ===================
    Componentes
@@ -32,10 +36,14 @@
 /* Elementos de interface */
 @import url("components/_buttons.css");
 @import url("components/_modal.css");
-@import url("components/_infrastructure-grid.css");
+@import url("components/_timeline.css");
+@import url("components/_segments.css");
+@import url("components/_services.css");
+@import url("components/_hero.css");
+@import url("components/_metrics.css");
+@import url("components/_coverage_filters.css");
 
 /* Seções específicas */
-@import url("components/_segments.css");
 
 /* Elementos de filtragem */
 
@@ -45,3 +53,5 @@
 /* Estilos específicos por página */
 @import url("pages/_home.css");
 @import url("pages/_clients.css");
+/* @import url("./pages/_contact.css"); */
+/* @import url("./pages/_services.css"); */

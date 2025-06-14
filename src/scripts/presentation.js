@@ -54,34 +54,32 @@ export const aboutContent = {
                     </div>
                 </div>
             </div>
-            <br>            <p class="company-history" style="text-align: center;"><strong>NOSSA INFRAESTRUTURA:</strong></p>
-            <div class="infrastructure-grid">
-                <div class="infrastructure-item">
-                    <i class="fas fa-truck-moving"></i>
-                    <h3>Frota Própria</h3>
-                    <p>Frota moderna e bem mantida, garantindo agilidade, controle e segurança no transporte de suas cargas.</p>
-                </div>
+            <br>            <p class="company-history" style="text-align: center;"><strong>NOSSO PROPÓSITO:</strong></p>
+            <p class="company-history" style="text-align: center;">Ser um parceiro estratégico dos nossos clientes e transformar a logística nacional com soluções eficientes, transparentes e seguras. Nosso compromisso é entregar qualidade, pontualidade e inovação, atender às necessidades específicas de cada cliente e promover a sustentabilidade, contribuindo ativamente para o avanço do agronegócio e da indústria.</p>
+            
+            <p class="company-history" style="text-align: center;"><strong>NOSSOS PRINCÍPIOS:</strong></p>
+            <ul class="company-history" style="list-style-type: none; padding-left: 0; text-align: center;">
+                <li style="text-align: center;"><strong>FOCO NO CLIENTE E NOS RESULTADOS</strong></li>
+                <li style="text-align: center;">Priorizar as necessidades dos clientes, buscando sempre entregar soluções ágeis, eficazes e com resultados positivos.</li>
                 
-                <div class="infrastructure-item">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>Agenciamento de Cargas</h3>
-                    <p>Rede integrada de parceiros e soluções logísticas para atender todo o território brasileiro com eficiência.</p>
-                </div>
+                <li style="text-align: center;"><strong>AGILIDADE E RAPIDEZ</strong></li>
+                <li style="text-align: center;">Responder de forma célere e eficiente, reconhecendo a importância do tempo na construção de relações de sucesso.</li>
                 
-                <div class="infrastructure-item">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Unidades Estratégicas</h3>
-                    <p>Pontos de embarque estrategicamente localizados, ampliando nosso alcance e capacidade de atendimento.</p>
-                </div>
+                <li style="text-align: center;"><strong>QUALIDADE E EXCELÊNCIA</strong></li>
+                <li style="text-align: center;">Garantir processos e entregas de alta qualidade, desenvolvendo com precisão o que foi proposto.</li>
                 
-                <div class="infrastructure-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Segurança e Rastreamento</h3>
-                    <p>Monitoramento 24/7 e tecnologia avançada de rastreamento para garantir a segurança das suas cargas.</p>
-                </div>
-            </div>
-            <br>
-            <p class="company-history" style="text-align: center;">Comprometidos com a excelência, seguimos evoluindo para oferecer as melhores soluções em transporte e logística.</p>
+                <li style="text-align: center;"><strong>RESPONSABILIDADE E COMPROMISSO</strong></li>
+                <li style="text-align: center;">Assumir responsabilidades, agir com ética, transparência e dedicação em todas as ações e decisões.</li>
+                
+                <li style="text-align: center;"><strong>COMUNICAÇÃO E COLABORAÇÃO</strong></li>
+                <li style="text-align: center;">Promover integração entre as áreas, garantindo uma comunicação clara e eficaz para alcançar objetivos comuns.</li>
+                
+                <li style="text-align: center;"><strong>SEGURANÇA E CONFIABILIDADE</strong></li>
+                <li style="text-align: center;">Assegurar a execução segura de todas as atividades, conectando pessoas e negócios com confiança.</li>
+                
+                <li style="text-align: center;"><strong>TRABALHO EM EQUIPE E INTEGRAÇÃO</strong></li>
+                <li style="text-align: center;">Valorizar o espírito colaborativo, unindo esforços para superar desafios e alcançar metas com eficiência.</li>
+            </ul>
         </div>
         
     `,
