@@ -22,6 +22,11 @@
 @import url("layout/_footer.css");
 
 /* ===================
+   Utilitários
+   =================== */
+@import url("utils/_layout.css");
+
+/* ===================
    Componentes
    =================== */
 /* Elementos de interface */

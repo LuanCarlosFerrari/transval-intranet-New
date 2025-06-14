@@ -1,0 +1,15 @@
+/* --------------------------------------------------
+   _layout.css – Utilitários de Layout
+   -------------------------------------------------- */
+
+/* Estilos para .section-padding movidos de section-colors.css */
+.section-padding {
+    max-width: var(--max-width); /* Certifique-se que --max-width está definido em _variables.css */
+    margin: 0 auto;
+    padding-left: var(--spacing-3); /* Certifique-se que --spacing-3 está definido em _variables.css */
+    padding-right: var(--spacing-3);
+}
+
+/* Se houver variações de .section-padding dentro de classes específicas, 
+   elas foram mantidas em _home.css ou nos respectivos componentes 
+   para manter a especificidade original. Este é o estilo base. */

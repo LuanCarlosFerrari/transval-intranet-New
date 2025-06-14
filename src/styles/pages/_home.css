@@ -34,6 +34,42 @@
   max-width: 900px;
 }
 
+/* Seção Hero */
+.hero {
+    background-color: var(--section-bg-dark);
+    /* .section-padding para .hero, se aplicável, deve ser adicionado no HTML ou aqui se for específico */
+}
+
+/* Seção Serviços */
+.services {
+    background-color: var(--clr-neutral-900);
+    padding: 2rem 0; /* Mantido de section-colors.css */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* .services .section-padding já está coberto pelo _layout.css globalmente, 
+   a menos que haja uma necessidade específica de aninhamento aqui.
+   Se .services sempre usa .section-padding, adicione a classe .section-padding ao elemento no HTML.
+*/
+
+/* Seção Cobertura - estilos de section-colors.css mesclados com os existentes */
+.coverage {
+    background-color: var(--clr-neutral-900); /* De section-colors.css */
+    /* padding: var(--section-padding);  Removido para usar o padding de 2rem 0 abaixo ou o .section-padding global */
+    padding: 2rem 0; /* De section-colors.css, pode ser ajustado se .section-padding for usado no HTML */
+    width: 100%;     /* De section-colors.css */
+    box-sizing: border-box; /* De section-colors.css */
+}
+
+/* .coverage p de section-colors.css */
+.coverage > p { /* Adicionado seletor mais específico para evitar conflitos com .coverage .section-description p */
+    text-align: center;
+    color: var(--clr-neutral-100); /* De section-colors.css */
+    margin-bottom: var(--spacing-3); /* De section-colors.css */
+    /* Mantém os estilos existentes de .coverage section-padding > p e .coverage > p abaixo se forem diferentes */
+}
+
 /* Centraliza a seção "Vamos acelerar sua logística?" */
 .contact-cta {
   display: flex;
@@ -81,4 +117,43 @@
     .coverage-map {
         height: 250px;
     }
+}
+
+/* Seção Métricas */
+.metrics {
+    background-color: var(--clr-neutral-100);
+    padding: 2rem 0; /* Mantido de section-colors.css */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Seção Sobre */
+.about {
+    background-color: var(--clr-neutral-900);
+    padding: 2rem 0; /* Mantido de section-colors.css */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about .company-history { /* Estilo específico de .about de section-colors.css */
+    color: var(--clr-neutral-100);
+}
+
+/* Seção Clientes (Base) */
+/* Estilos específicos de .clients-section ou similar podem estar em pages/_clients.css */
+/* Este .clients é o estilo base que estava em section-colors.css */
+.clients {
+    background-color: var(--clr-neutral-100);
+    padding: 2rem 0; /* Mantido de section-colors.css */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Contact CTA section - estilos de section-colors.css mesclados com os existentes */
+.contact-cta {
+  background-color: var(--clr-neutral-100); /* De section-colors.css */
+  padding: 2rem 0; /* De section-colors.css */
+  width: 100%; /* De section-colors.css */
+  box-sizing: border-box; /* De section-colors.css */
+  /* Estilos existentes de display, flex-direction, etc., são mantidos abaixo */
 }
