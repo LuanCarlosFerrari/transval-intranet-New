@@ -1,0 +1,84 @@
+/* --------------------------------------------------
+   _home.css – Seções principais da Home (hero, mapa, extras)
+   -------------------------------------------------- */
+
+/* Nota: Os estilos principais do hero foram movidos para _hero-title-banner.css */
+
+/* Cobertura */
+.coverage {
+    padding: var(--section-padding);
+}
+
+.coverage-map {
+    width: 100%;
+    height: 400px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-top: var(--spacing-4);
+}
+
+.coverage .section-description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: var(--spacing-4);
+}
+
+/* Centraliza o texto da cobertura nacional acima do mapa */
+.coverage section-padding > p,
+.coverage > p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+/* Centraliza a seção "Vamos acelerar sua logística?" */
+.contact-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-cta p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  margin-bottom: var(--spacing-4);
+}
+
+.contact-cta .btn {
+  margin-top: var(--spacing-2);
+}
+
+/* Ajustes responsivos extras */
+@media(max-width:375px){
+  .hero-title{font-size:1.5rem}
+  .section-title{font-size:1.5rem}
+}
+
+@media (max-width: 768px) {
+    .coverage {
+        padding: var(--spacing-3);
+    }
+
+    .coverage-map {
+        height: 300px;
+        margin-top: var(--spacing-3);
+        border-radius: var(--radius-md);
+    }
+
+    .coverage .section-description {
+        padding: 0 var(--spacing-3);
+        font-size: var(--font-size-base);
+    }
+}
+
+@media (max-width: 480px) {
+    .coverage-map {
+        height: 250px;
+    }
+}

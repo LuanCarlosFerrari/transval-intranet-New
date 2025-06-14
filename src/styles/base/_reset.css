@@ -1,0 +1,65 @@
+/* --------------------------------------------------
+   _reset.css – Reset / Normalize básico
+   -------------------------------------------------- */
+
+/* ===================
+   Box Model
+   =================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================
+   HTML & Acessibilidade
+   =================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===================
+   Mídia
+   =================== */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* ===================
+   Formulários
+   =================== */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ===================
+   Botões
+   =================== */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===================
+   Links e Listas
+   =================== */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}

@@ -1,0 +1,65 @@
+/* Cards para logos dos clientes */
+.clients-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.client-card {  
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 140px; /* aproximadamente aspect-ratio 16/9 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.client-card img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+}
+
+.client-card:hover img {
+  filter: grayscale(0);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .clients-grid {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .client-card {
+    width: 200px;
+    height: 112px; /* mantendo proporção */
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-grid {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .client-card {
+    width: 150px;
+    height: 84px; /* mantendo proporção */
+  }
+}

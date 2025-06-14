@@ -1,0 +1,119 @@
+/* ────  TIMELINE  ─────────────────────────────────────────── */
+.timeline {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* linha central */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--clr-primary);
+    z-index: 0;
+}
+
+/* cada evento */
+.event {
+    position: relative;
+    flex: 1 1 140px;
+    text-align: center;
+}
+
+/* ponto na linha */
+.event::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: var(--clr-primary);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* cartão de conteúdo */
+.event .content {
+    position: relative;
+    background: var(--clr-neutral-100);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+/* alterna em cima/baixo da linha */
+.event:nth-child(odd) .content {
+    margin-bottom: 2.5rem; /* acima da linha */
+}
+
+.event:nth-child(even) .content {
+    margin-top: 2.5rem; /* abaixo da linha */
+}
+
+.event h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.event h3 span {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--clr-neutral-900);
+    text-transform: none;
+}
+
+.event p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+/* ────  RESPONSIVO – empilha vertical  ───────────────────── */
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .timeline::before {
+        left: 32px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        height: auto;
+    }
+
+    .event {
+        text-align: left;
+        padding-left: 64px;
+    }
+
+    .event::before {
+        left: 32px;
+        top: 0;
+        transform: translate(-50%, 0);
+    }
+
+    .event .content {
+        margin: 0;
+    }
+}

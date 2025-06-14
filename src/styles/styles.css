@@ -1,0 +1,42 @@
+/* --------------------------------------------------
+   styles.css – Arquivo principal de estilos
+   -------------------------------------------------- */
+
+/* ===================
+   Base
+   =================== */
+/* Resets e normalizações */
+@import url("base/_reset.css");
+
+/* Design tokens e variáveis */
+@import url("base/_variables.css");
+
+/* Tipografia global e utilitários */
+@import url("base/_typography.css");
+
+/* ===================
+   Layout
+   =================== */
+/* Componentes estruturais */
+@import url("layout/_header.css");
+@import url("layout/_footer.css");
+
+/* ===================
+   Componentes
+   =================== */
+/* Elementos de interface */
+@import url("components/_buttons.css");
+@import url("components/_modal.css");
+@import url("components/_infrastructure-grid.css");
+
+/* Seções específicas */
+@import url("components/_segments.css");
+
+/* Elementos de filtragem */
+
+/* ===================
+   Páginas
+   =================== */
+/* Estilos específicos por página */
+@import url("pages/_home.css");
+@import url("pages/_clients.css");

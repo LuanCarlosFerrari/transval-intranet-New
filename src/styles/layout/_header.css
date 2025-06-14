@@ -1,0 +1,160 @@
+/* --------------------------------------------------
+   _header.css – Cabeçalho & navegação
+   -------------------------------------------------- */
+
+/* ===================
+   Container Principal
+   =================== */
+.header {
+    background: var(--clr-neutral-100);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: var(--shadow-md);
+    width: 100%;
+}
+
+.header-container {
+    max-width: 100%;
+    padding: var(--spacing-2) 0;
+    padding-left: var(--spacing-3);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* ===================
+   Logo
+   =================== */
+.logo img {
+    height: 45px;
+    width: auto;
+}
+
+/* ===================
+   Navegação
+   =================== */
+/* Container da navegação */
+.nav-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu principal */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Links de navegação */
+.nav-link {
+    display: inline-block;
+    padding: var(--spacing-2) var(--spacing-3);
+    color: var(--clr-neutral-900);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+    white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--clr-primary-500);
+}
+
+/* ===================
+   Área de Login
+   =================== */
+.login-container {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-2) var(--spacing-4);
+    background-color: var(--clr-primary-900);
+    margin-left: auto;
+}
+
+.login-button {
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+.login-button:hover {
+    opacity: 0.9;
+}
+
+/* ===================
+   Menu Mobile
+   =================== */
+.mobile-menu-button {
+    display: none;
+    font-size: 1.75rem;
+    color: var(--clr-neutral-900);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-2);
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1001;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .header-container {
+        padding: var(--spacing-2);
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .nav-container {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        transform: none;
+        height: calc(100vh - 60px);
+        background-color: var(--clr-neutral-100);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        padding: var(--spacing-4);
+        gap: var(--spacing-2);
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: var(--spacing-2) 0;
+    }
+
+    /* Quando o menu mobile estiver aberto */
+    .header.menu-open .nav-container {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 35px;
+    }
+}

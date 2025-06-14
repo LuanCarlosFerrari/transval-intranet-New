@@ -1,0 +1,97 @@
+/* --------------------------------------------------
+   _variables.css – Design tokens (cores, espaçamentos, fontes…)
+   -------------------------------------------------- */
+
+:root {
+    /* ===================
+       Cores
+       =================== */
+    /* Cores principais */
+    --clr-primary-500: #004aad;
+    --clr-primary-600: #003e8f;
+    --clr-neutral-100: #ffffff;
+    --clr-neutral-900: #111827;
+    --clr-neutral-700: #374151;
+    --clr-neutral-500: #6b7280;
+    --clr-accent-500: #f59e0b;
+
+    /* Cores semânticas */
+    --section-bg-light: var(--clr-neutral-100);
+    --section-bg-dark: #004aad;
+    --section-text-light: var(--clr-neutral-900);
+    --section-text-dark: var(--clr-neutral-100);
+
+    /* ===================
+       Tipografia
+       =================== */
+    --font-display: 'Inter', sans-serif;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+
+    /* ===================
+       Espaçamento
+       =================== */
+    /* Grid e containers */
+    --max-width: 1200px;
+    --container-max-width: 1200px;
+    --container-padding: 1rem;
+    --container-width: min(100% - 2rem, var(--container-max-width));
+    
+    /* Espaçamentos base */
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 1rem;
+    --spacing-4: 1.5rem;
+    --spacing-5: 2rem;
+    --spacing-6: 3rem;
+    --section-padding: clamp(2rem, 5vw, 5rem);
+
+    /* ===================
+       Layout
+       =================== */
+    /* Bordas arredondadas */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+
+    /* Breakpoints */
+    --mobile: 480px;
+    --tablet: 768px;
+    --desktop: 1024px;
+
+    /* ===================
+       Efeitos
+       =================== */
+    --transition-fast: 0.2s ease;
+    --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================
+   Tema Escuro
+   =================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-neutral-100: #111827;
+        --clr-neutral-900: #f9fafb;
+        --clr-neutral-700: #d1d5db;
+        --clr-neutral-500: #9ca3af;
+    }
+}
+
+/* ===================
+   Responsividade
+   =================== */
+@media (max-width: 768px) {
+    :root {
+        --section-padding: clamp(1.5rem, 3vw, 3rem);
+        --spacing-6: 2rem;
+        --font-size-3xl: 1.5rem;
+        --font-size-2xl: 1.25rem;
+        --font-size-xl: 1.125rem;
+    }
+}

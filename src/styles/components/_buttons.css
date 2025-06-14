@@ -1,0 +1,50 @@
+/* --------------------------------------------------
+   _buttons.css – Botões reutilizáveis
+   -------------------------------------------------- */
+
+/* Base button styles */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+/* Primary button variant */
+.btn-primary {
+  background: var(--clr-primary-500);
+  color: var(--clr-neutral-100);
+}
+
+.btn-primary:hover {
+  background: var(--clr-primary-600);
+}
+
+/* Outline button variant */
+.btn-outline {
+  border: 2px solid var(--clr-primary-500);
+  color: var(--clr-primary-500);
+}
+
+.btn-outline:hover {
+  background: var(--clr-primary-500);
+  color: var(--clr-neutral-100);
+}
+
+/* Login button specific styles */
+.login-button {
+  background: #fff;
+  color: var(--clr-primary-500);
+  border: 2px solid currentColor;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-2) var(--spacing-4);
+  font-weight: 600;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.login-button:hover,
+.login-button:focus {
+  background: var(--clr-primary-500);
+  color: #fff;
+}

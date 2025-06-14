@@ -1,0 +1,308 @@
+/* --------------------------------------------------
+   _modal.css – Janela de login
+   -------------------------------------------------- */
+
+/* ===================
+   Container do Modal
+   =================== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999 !important; /* Garante que fique acima de tudo */
+}
+
+/* Estado ativo */
+.modal[aria-hidden="false"] {
+    display: flex;
+}
+
+/* ===================
+   Conteúdo do Modal
+   =================== */
+.modal-content {
+    background: #FFFFFF;
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    width: min(90%, 400px);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    color: #333333;
+}
+
+/* Centraliza todos os títulos dos modais */
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-4);
+    font-size: 1.5rem;
+}
+
+/* Botão de fechar */
+.close {
+    position: absolute;
+    top: var(--spacing-2);
+    right: var(--spacing-2);
+    font-size: 1.5rem;
+    color: var(--clr-neutral-700);
+    transition: color 0.2s ease;
+}
+
+.close:hover {
+    color: #333333;
+}
+
+/* ===================
+   Formulário
+   =================== */
+/* Mensagem de erro */
+.error-message {
+    color: red;
+    margin-bottom: var(--spacing-2);
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: var(--spacing-2);
+    border: 1px solid var(--clr-neutral-500);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-3);
+}
+
+/* Botão de envio */
+#submitLoginBtn {
+    width: 100%;
+}
+
+/* ===================
+   Ajustes de Z-index
+   =================== */
+/* Garante que o mapa não sobreponha o modal */
+.leaflet-container {
+    z-index: 1;
+}
+
+/* ===================
+   Formulário de Contatos
+   =================== */
+#contatosModal .modal-content {
+    width: min(90%, 600px); /* Modal de contatos um pouco maior */
+}
+
+#contatosModal textarea {
+    width: 100%;
+    padding: var(--spacing-2);
+    border: 1px solid var(--clr-neutral-500);
+    border-radius: var(--radius-sm);
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contatosModal select {
+    width: 100%;
+    padding: var(--spacing-2);
+    border: 1px solid var(--clr-neutral-500);
+    border-radius: var(--radius-sm);
+    background-color: var(--clr-neutral-100);
+    cursor: pointer;
+}
+
+#contatosModal .form-group {
+    margin-bottom: var(--spacing-3);
+}
+
+#contatosModal label {
+    display: block;
+    margin-bottom: var(--spacing-1);
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+/* Ajuste para campos de contato */
+#contatosModal input:focus,
+#contatosModal textarea:focus,
+#contatosModal select:focus {
+    outline: none;
+    border-color: var(--clr-primary);
+    box-shadow: 0 0 0 2px rgba(var(--clr-primary-rgb), 0.1);
+}
+
+/* Estilos para campo de serviço readonly */
+#contatosModal input[readonly] {
+    background-color: var(--clr-neutral-200);
+    cursor: not-allowed;
+    border-color: var(--clr-neutral-400);
+}
+
+/* ===================
+   Estilos para a área do gestor
+   =================== */
+.gestor-info {
+    padding: var(--spacing-4);
+    background: #FFFFFF;
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-grupo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-3);
+    justify-content: center;
+    color: #4a4a4a;
+}
+
+.info-icon {
+    color: var(--clr-primary);
+    font-size: 1.2rem;
+}
+
+.btn-whatsapp {
+    background-color: #00E676;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-4);
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-whatsapp:hover {
+    background-color: #00D066;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-whatsapp i {
+    font-size: 1.25rem;
+}
+
+/* Efeito de clique */
+.btn-whatsapp:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gestor-info h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-4);
+    color: var(--clr-primary);
+}
+
+/* Estilos para múltiplos gestores */
+.gestor-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: var(--spacing-3);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-3);
+}
+
+.gestor-card:last-child {
+    margin-bottom: 0;
+}
+
+.gestor-card .btn-whatsapp {
+    margin-top: var(--spacing-2);
+}
+
+.gestor-separator {
+    height: 1px;
+    background: var(--clr-neutral-300);
+    margin: var(--spacing-4) 0;
+    width: 100%;
+}
+
+#contatoGestorCacambas .gestor-info {
+    padding: var(--spacing-3);
+}
+
+#contatoGestorCacambas h3 {
+    margin-bottom: var(--spacing-4);
+    text-align: center;
+    color: var(--clr-primary);
+}
+
+.modal h2,
+.modal h3 {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* ===================
+   Seção infraestrutura
+   =================== */
+.infra {
+    background: var(--clr-bg-light);
+    padding: 3rem 2rem 4rem;
+    text-align: center;
+    border-radius: var(--radius-lg);
+    margin-top: 2rem;
+}
+
+.infra h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.infra .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.feature {
+    background: var(--clr-neutral-100);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature .icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.feature h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: var(--clr-neutral-900);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--clr-neutral-700);
+}
